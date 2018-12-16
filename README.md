@@ -2,6 +2,7 @@
 
 Delay execution of callbacks to a given minimum timeframe. Tiny package, has below 50 lines of code. 
 
+[![Build Status](https://travis-ci.org/jankapunkt/js-dely.svg?branch=master)](https://travis-ci.org/jankapunkt/js-dely)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
