@@ -1,6 +1,6 @@
 {
   "name": "dely",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Delay execution of callbacks to a given minimum timeframe.",
   "main": "dist/index.js",
   "scripts": {
@@ -10,12 +10,10 @@
     "test": "mocha --require @babel/register \"lib/**/*.tests.js\"",
     "test-coverage": "nyc --reporter=html --reporter=text mocha --require @babel/register \"lib/**/*.tests.js\"",
     "test-watch": "npm test -- --watch",
-    "docs": "jsdoc --readme ../README.md ./lib/*.js -d ../docs && jsdoc2md ./lib/index.js > ../api.md",
     "build": "rm -rf ./dist/** && babel lib --out-dir ./dist --ignore **/*.tests.js --source-maps",
     "build-min": "minify ./dist/index.js --out-file ./dist/index.min.js --mangle.keepFnName --mangle.keepClassName --",
-    "build-full": "npm run docs && npm run build && npm run build-min",
-    "copy": "cp ../README.md ./README.md && cp ../LICENSE ./LICENSE",
-    "build-ci": "npm run lint && npm run test && npm run copy && npm run build-full",
+    "build-full": "npm run build && npm run build-min",
+    "build-ci": "npm run lint && npm run test && npm run build-full",
     "report": "nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
@@ -26,8 +24,6 @@
     "babel-minify": "^0.5.0-alpha.3cc09dcf",
     "babel-plugin-istanbul": "^5.0.1",
     "chai": "^4.1.2",
-    "jsdoc": "^3.5.5",
-    "jsdoc-to-markdown": "^4.0.1",
     "mocha": "^5.2.0",
     "nyc": "^13.0.1",
     "standard": "*"
