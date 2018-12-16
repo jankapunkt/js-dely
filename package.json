@@ -1,0 +1,25 @@
+{
+  "name": "dely",
+  "version": "0.0.1",
+  "description": "Delay execution of callbacks to a given minimum timeframe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jankapunkt/js-dely.git"
+  },
+  "keywords": [
+    "callback",
+    "delay",
+    "ui",
+    "ux"
+  ],
+  "author": "Jan Küster <jkuester@uni-bremen.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jankapunkt/js-dely/issues"
+  },
+  "homepage": "https://github.com/jankapunkt/js-dely#readme"
+}
