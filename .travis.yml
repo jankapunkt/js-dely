@@ -9,7 +9,7 @@ node_js:
   - "stable"
 
 before_script:
-  - cd package && npm install
+  - npm install
 
 script:
   - npm run build-ci
