@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = getDelayedCallback;
+exports["default"] = getDelayedCallback;
 
 function getDelayedCallback(delay, cb) {
   if (!cb) {
