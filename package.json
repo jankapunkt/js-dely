@@ -1,6 +1,6 @@
 {
   "name": "dely",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Delay execution of callbacks to a given minimum timeframe.",
   "main": "dist/index.js",
   "scripts": {
@@ -17,16 +17,16 @@
     "report": "nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/register": "^7.7.7",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
     "babel-minify": "^0.5.1",
     "babel-plugin-istanbul": "^6.0.0",
     "chai": "^4.1.2",
-    "mocha": "^7.0.0",
-    "nyc": "^15.0.0",
-    "standard": "^14.3.1"
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
+    "standard": "^14.3.3"
   },
   "babel": {
     "presets": [
